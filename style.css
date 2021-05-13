@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: #ddd;
+}
+
+body {
+    min-height: 100vh;
+    font-size: 14px;
+    background: linear-gradient(135deg, #7d43a1, #15a7e1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    max-width: 340px;
+    background: #262936;
+    border-top: 3px solid #15cae1;
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.15);
+    padding: 48px 0;
+}
+
+.title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    padding: 0 48px;
+}
+
+.welcome-message {
+    font-size: 0.8em;
+    margin-bottom: 28px;
+    letter-spacing: 0.5px;
+    line-height: 18px;
+    padding: 0 48px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control {
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.form-control:first-child {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.form-control input {
+    width: 100%;
+    outline: none;
+    border: none;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 12px 80px;
+    letter-spacing: 0.8px;
+    font-size: 0.9em;
+}
+
+.form-control i {
+    position: absolute;
+    left: 48px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: color 0.3s;
+}
+
+.form-control input:focus~i {
+    color: #15cae1;
+}
+
+button.submit {
+    border: none;
+    background: none;
+    color: #15cae1;
+    border: 2px solid #15cae1;
+    padding: 8px 40px;
+    margin: 32px auto;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+button.submit:hover {
+    background-color: #15cae1;
+    color: #eee;
+}
+
+.social-login label {
+    display: block;
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 0.9em;
+}
+
+.social-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.social-login button {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: 1px solid #999;
+    border-radius: 50%;
+    margin: 8px;
+    transition: color 0.4s;
+}
+
+.social-login button:hover i {
+    color: #15cae1;
+}
+
+.additional-action {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 0.8em;
+}
+
+.additional-action p {
+    margin: auto;
+    color: #777;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.additional-action p:hover {
+    color: #ddd;
+}
